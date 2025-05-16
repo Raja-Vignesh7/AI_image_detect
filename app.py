@@ -5,9 +5,9 @@ from main import Model
 
 # Set up folders
 TEMP_DIR = "temp"
-ARCHIVE_DIR = "arcive"
+# ARCHIVE_DIR = "arcive"
 os.makedirs(TEMP_DIR, exist_ok=True)
-os.makedirs(ARCHIVE_DIR, exist_ok=True)
+# os.makedirs(ARCHIVE_DIR, exist_ok=True)
 
 st.title("AI vs Human Image Detector")
 
