@@ -16,6 +16,8 @@ This project aims to classify whether a given image is **AI-generated** or **Hum
 
 The model was developed using **TensorFlow Keras** with a focus on computational efficiency. The architecture uses `DepthwiseConv2D` and `SeparableConv2D` layers to reduce the number of parameters while maintaining performance.
 
+Model accuracy : 90%
+
 ---
 
 ## Dataset
