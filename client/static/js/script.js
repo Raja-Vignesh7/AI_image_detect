@@ -36,7 +36,7 @@ form.onsubmit = async (e) => {
         }
 
         if (response.ok) {
-    const message = `Result: ${data.result || JSON.stringify(data)}`;
+    const message = `📊Result: ${data.result || JSON.stringify(data)}`;
     result.textContent = message;
     alert(message);
 }
