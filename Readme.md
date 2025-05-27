@@ -21,6 +21,6 @@ Model accuracy : 90%
 ---
 
 ## Dataset
-The Model is trained from a kaggle competition [Detect AI vs. Human-Generated Images](https://www.kaggle.com/competitions/detect-ai-vs-human-generated-images)
+The Model is trained from a kaggle competition dataset [Detect AI vs. Human-Generated Images](https://www.kaggle.com/competitions/detect-ai-vs-human-generated-images)
 
 
