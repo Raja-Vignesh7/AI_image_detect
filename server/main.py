@@ -41,31 +41,29 @@ def get_image_from_user():
 # Example usage:
 # img = get_image_from_user()
 # img.show()
-
 class Model:
+    model = None
+    model_path = os.path.join(os.path.dirname(__file__), 'AI_imageDetect3.h5')
+
     @staticmethod
-    def predict(image_path):
-        model = tf.keras.models.load_model("AI_imageDetect3.h5")
-        image = cv.imread(image_path)
+    def load_model():
+        if Model.model is None:
+            if not os.path.exists(Model.model_path):
+                raise FileNotFoundError(f"Model file not found: {Model.model_path}")
+            Model.model = tf.keras.models.load_model(Model.model_path)
 
-        image = cv.resize(image, (444, 444))
-        image = image.astype('float32') / 255.0
-        image = np.expand_dims(image, axis=0)
+    @staticmethod
+    def predict(img_path):
+        Model.load_model()
 
-        predict = model.predict(image)
-        
-        # ===== OPTION 1: Delete the image file after prediction =====
-        # if os.path.exists(image_path):
-        #     os.remove(image_path)
-
-        # ===== OPTION 2: Move the image to an "archive" folder =====
-        archive_folder = "archive"
-        os.makedirs(archive_folder, exist_ok=True)
-        archived_path = os.path.join(archive_folder, os.path.basename(image_path))
-        shutil.move(image_path, archived_path)
-        print(predict[0][1])
-        return predict[0][1]
-    
+        try:
+            img = tf.keras.preprocessing.image.load_img(img_path, target_size=(128, 128))
+            img_array = tf.keras.preprocessing.image.img_to_array(img)
+            img_array = np.expand_dims(img_array, axis=0) / 255.0
+            prediction = Model.model.predict(img_array)
+            return float(prediction[0][0])
+        except Exception as e:
+            raise Exception(f"Prediction failed: {str(e)}")
 # image_path = get_image_from_user()
 # # image.show()
 # model = Model()
