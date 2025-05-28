@@ -1,29 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Image Detector</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
-    <div class="main_head"><h1>AI Image Detection</h1></div>
-    <div class="content">
-    <div><form id="imageForm">
-        <input type="file" id="imageInput" name="image" accept="image/*" required><br><br>
-    </form></div>
-    <div class="upload"><button type="submit">Upload & Analyze</button></div>
-
-    <p>Select an image to check if it's AI-generated or real.</p>
-    </div>
-    
-
-    <img id="preview" src="#" alt="Image Preview" style="display: none;"/>
-    <p id="result"></p>
-
-    <script src="../static/js/script.js"></script>
-</body>
-</html> -->
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,5 +24,716 @@
     </div>
 
     <script src="../static/js/script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Detection | Detect AI-Generated Images</title>
+    <meta name="description" content="Advanced AI-powered tool to detect whether an image is AI-generated or human-created with high accuracy.">
+    <link rel="icon" href="../static/utils/webicon.webp" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --secondary-gradient: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --dark-gradient: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            --success-color: #00d4aa;
+            --warning-color: #ff6b6b;
+            --text-primary: #ffffff;
+            --text-secondary: #e2e8f0;
+            --text-muted: #94a3b8;
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: rgba(255, 255, 255, 0.1);
+            --border-color: rgba(255, 255, 255, 0.2);
+            --shadow-lg: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --shadow-xl: 0 35px 60px -12px rgba(0, 0, 0, 0.4);
+            --blur-bg: rgba(15, 23, 42, 0.8);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Animated background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--primary-gradient);
+            opacity: 0.1;
+            z-index: -2;
+        }
+
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .floating-shape {
+            position: absolute;
+            border-radius: 50%;
+            background: linear-gradient(45deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+            animation: float 20s infinite linear;
+        }
+
+        .floating-shape:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+
+        .floating-shape:nth-child(2) {
+            width: 150px;
+            height: 150px;
+            top: 70%;
+            right: 20%;
+            animation-delay: -5s;
+        }
+
+        .floating-shape:nth-child(3) {
+            width: 200px;
+            height: 200px;
+            bottom: 20%;
+            left: 70%;
+            animation-delay: -10s;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            25% { transform: translateY(-20px) rotate(90deg); }
+            50% { transform: translateY(-40px) rotate(180deg); }
+            75% { transform: translateY(-20px) rotate(270deg); }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--blur-bg);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-weight: 700;
+            background: var(--primary-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .header .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .upload-section {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 3rem;
+            text-align: center;
+            box-shadow: var(--shadow-xl);
+            margin-bottom: 3rem;
+            transition: all 0.3s ease;
+        }
+
+        .upload-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 40px 80px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* File upload area */
+        .upload-area {
+            position: relative;
+            border: 2px dashed var(--border-color);
+            border-radius: 16px;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .upload-area:hover,
+        .upload-area.dragover {
+            border-color: var(--success-color);
+            background: rgba(0, 212, 170, 0.05);
+            transform: scale(1.02);
+        }
+
+        .upload-icon {
+            font-size: 4rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .upload-area:hover .upload-icon {
+            color: var(--success-color);
+            transform: scale(1.1);
+        }
+
+        .upload-text {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .upload-subtext {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+        }
+
+        #imageInput {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Image preview */
+        .preview-container {
+            margin: 2rem 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+
+        .preview-container.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #preview {
+            max-width: 100%;
+            max-height: 400px;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+            border: 3px solid var(--border-color);
+        }
+
+        /* Action button */
+        .action-button {
+            background: var(--secondary-gradient);
+            border: none;
+            border-radius: 50px;
+            padding: 1rem 3rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+            min-width: 200px;
+        }
+
+        .action-button:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .action-button:active {
+            transform: translateY(0);
+        }
+
+        .action-button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .button-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        /* Loading spinner */
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-top: 2px solid white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Results section */
+        .results-section {
+            background: var(--bg-card);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--border-color);
+            border-radius: 24px;
+            padding: 2rem;
+            box-shadow: var(--shadow-xl);
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.5s ease;
+        }
+
+        .results-section.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .result-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .result-icon {
+            font-size: 2rem;
+        }
+
+        .result-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .result-content {
+            text-align: center;
+        }
+
+        .confidence-meter {
+            margin: 1.5rem 0;
+        }
+
+        .confidence-bar {
+            width: 100%;
+            height: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            border-radius: 6px;
+            transition: width 1s ease;
+            background: var(--success-color);
+        }
+
+        .confidence-text {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .result-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .detail-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .detail-label {
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-value {
+            font-weight: 600;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        /* Error states */
+        .error {
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.1), rgba(255, 107, 107, 0.05));
+            border-color: var(--warning-color);
+        }
+
+        .error .result-icon {
+            color: var(--warning-color);
+        }
+
+        /* Success states */
+        .success .confidence-fill {
+            background: var(--success-color);
+        }
+
+        .ai-result .confidence-fill {
+            background: var(--warning-color);
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 2rem 1rem;
+            }
+
+            .upload-section {
+                padding: 2rem 1.5rem;
+            }
+
+            .upload-area {
+                padding: 2rem 1rem;
+            }
+
+            .header {
+                padding: 2rem 1rem;
+            }
+
+            .floating-shape {
+                display: none;
+            }
+        }
+
+        /* Accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* Focus styles */
+        .action-button:focus,
+        #imageInput:focus + .upload-area {
+            outline: 2px solid var(--success-color);
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-animation">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <h1><i class="fas fa-search"></i> AI Image Detection</h1>
+        <p class="subtitle">Advanced AI-powered detection to identify AI-generated images</p>
+    </header>
+
+    <!-- Main content -->
+    <div class="container">
+        <!-- Upload section -->
+        <div class="upload-section">
+            <form id="imageForm">
+                <div class="upload-area" id="uploadArea">
+                    <input type="file" id="imageInput" name="image" accept="image/*" required>
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <div class="upload-text">Drop your image here or click to browse</div>
+                    <div class="upload-subtext">Supports JPG, PNG, GIF, WebP (Max: 16MB)</div>
+                </div>
+
+                <div class="preview-container" id="previewContainer">
+                    <img id="preview" alt="Image Preview">
+                </div>
+
+                <button type="submit" class="action-button" id="analyzeButton">
+                    <div class="button-content">
+                        <i class="fas fa-microscope"></i>
+                        <span>Analyze Image</span>
+                    </div>
+                </button>
+            </form>
+        </div>
+
+        <!-- Results section -->
+        <div class="results-section" id="resultsSection">
+            <div class="result-header">
+                <div class="result-icon" id="resultIcon"></div>
+                <div class="result-title" id="resultTitle">Analysis Results</div>
+            </div>
+            
+            <div class="result-content">
+                <div id="resultText"></div>
+                
+                <div class="confidence-meter">
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" id="confidenceFill"></div>
+                    </div>
+                    <div class="confidence-text" id="confidenceText"></div>
+                </div>
+
+                <div class="result-details" id="resultDetails">
+                    <div class="detail-card">
+                        <div class="detail-label">Classification</div>
+                        <div class="detail-value" id="classificationValue">-</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Confidence Score</div>
+                        <div class="detail-value" id="confidenceValue">-</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Raw Prediction</div>
+                        <div class="detail-value" id="rawPredictionValue">-</div>
+                    </div>
+                    <div class="detail-card">
+                        <div class="detail-label">Processing Time</div>
+                        <div class="detail-value" id="processingTimeValue">-</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // DOM elements
+        const form = document.getElementById('imageForm');
+        const imageInput = document.getElementById('imageInput');
+        const uploadArea = document.getElementById('uploadArea');   
+        const preview = document.getElementById('preview');
+        const previewContainer = document.getElementById('previewContainer');
+        const analyzeButton = document.getElementById('analyzeButton');
+        const resultsSection = document.getElementById('resultsSection');
+        const resultIcon = document.getElementById('resultIcon');
+        const resultTitle = document.getElementById('resultTitle');
+        const resultText = document.getElementById('resultText');
+        const confidenceFill = document.getElementById('confidenceFill');
+        const confidenceText = document.getElementById('confidenceText');
+        const classificationValue = document.getElementById('classificationValue');
+        const confidenceValue = document.getElementById('confidenceValue');
+        const rawPredictionValue = document.getElementById('rawPredictionValue');
+        const processingTimeValue = document.getElementById('processingTimeValue');
+
+        let startTime;
+
+        // Drag and drop functionality
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                imageInput.files = files;
+                handleFileSelect(files[0]);
+            }
+        });
+
+        // File input change handler
+        imageInput.addEventListener('change', (e) => {
+            const file = e.target.files[0];
+            if (file) {
+                handleFileSelect(file);
+            }
+        });
+
+        // Handle file selection
+        function handleFileSelect(file) {
+            // Validate file size
+            if (file.size > 16 * 1024 * 1024) {
+                showError('File size must be less than 16MB');
+                return;
+            }
+
+            // Validate file type
+            const allowedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/gif', 'image/webp', 'image/bmp'];
+            if (!allowedTypes.includes(file.type)) {
+                showError('Please select a valid image file (JPG, PNG, GIF, WebP, BMP)');
+                return;
+            }
+
+            // Show preview
+            preview.src = URL.createObjectURL(file);
+            previewContainer.classList.add('show');
+            
+            // Hide previous results
+            resultsSection.classList.remove('show');
+        }
+
+        // Form submission handler
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const file = imageInput.files[0];
+            if (!file) {
+                showError('Please select an image file');
+                return;
+            }
+
+            startTime = Date.now();
+            setLoadingState(true);
+
+            const formData = new FormData();
+            formData.append('image', file);
+
+            try {
+                const response = await fetch('/analyze', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const contentType = response.headers.get("content-type");
+                let data;
+
+                if (contentType && contentType.includes("application/json")) {
+                    data = await response.json();
+                } else {
+                    const text = await response.text();
+                    data = { error: text };
+                }
+
+                if (response.ok && data.success) {
+                    showResults(data);
+                } else {
+                    showError(data.error || `Server error (${response.status})`);
+                }
+            } catch (error) {
+                showError(`Network error: ${error.message}`);
+                console.error('Analysis error:', error);
+            } finally {
+                setLoadingState(false);
+            }
+        });
+
+        // Set loading state
+        function setLoadingState(loading) {
+            analyzeButton.disabled = loading;
+            const buttonContent = analyzeButton.querySelector('.button-content');
+            
+            if (loading) {
+                buttonContent.innerHTML = `
+                    <div class="spinner"></div>
+                    <span>Analyzing...</span>
+                `;
+            } else {
+                buttonContent.innerHTML = `
+                    <i class="fas fa-microscope"></i>
+                    <span>Analyze Image</span>
+                `;
+            }
+        }
+
+        // Show results
+        function showResults(data) {
+            const processingTime = Date.now() - startTime;
+            const isAI = data.classification === 'ai';
+            
+            // Update result icon and title
+            resultIcon.innerHTML = isAI ? '<i class="fas fa-robot"></i>' : '<i class="fas fa-user"></i>';
+            resultIcon.style.color = isAI ? '#ff6b6b' : '#00d4aa';
+            
+            // Update result text
+            resultText.innerHTML = `
+                <div style="font-size: 1.25rem; margin-bottom: 1rem;">
+                    ${isAI ? '🤖' : '🧠'} <strong>This image appears to be ${isAI ? 'AI-Generated' : 'Human-Created'}</strong>
+                </div>
+            `;
+
+            // Update confidence meter
+            confidenceFill.style.width = `${data.confidence}%`;
+            confidenceText.textContent = `${data.confidence}% Confidence`;
+            
+            // Update detail cards
+            classificationValue.textContent = isAI ? 'AI-Generated' : 'Human-Created';
+            confidenceValue.textContent = `${data.confidence}%`;
+            rawPredictionValue.textContent = data.raw_prediction.toFixed(4);
+            processingTimeValue.textContent = `${processingTime}ms`;
+
+            // Apply appropriate styling
+            resultsSection.className = `results-section show ${isAI ? 'ai-result' : 'success'}`;
+        }
+
+        // Show error
+        function showError(message) {
+            resultIcon.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+            resultTitle.textContent = 'Analysis Failed';
+            resultText.innerHTML = `<div style="color: #ff6b6b;">${message}</div>`;
+            
+            // Reset other elements
+            confidenceFill.style.width = '0%';
+            confidenceText.textContent = '';
+            classificationValue.textContent = '-';
+            confidenceValue.textContent = '-';
+            rawPredictionValue.textContent = '-';
+            processingTimeValue.textContent = '-';
+
+            resultsSection.className = 'results-section show error';
+        }
+
+        // Cleanup object URLs to prevent memory leaks
+        window.addEventListener('beforeunload', () => {
+            if (preview.src.startsWith('blob:')) {
+                URL.revokeObjectURL(preview.src);
+            }
+        });
+    </script>
 </body>
 </html>
