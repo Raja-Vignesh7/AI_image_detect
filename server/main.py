@@ -1,12 +1,10 @@
 import tensorflow as tf
-import cv2 as cv
 import numpy as np
 
 from tkinter import Tk, filedialog
 from PIL import Image
 
 import os
-import shutil
 
 def get_image_from_user():
     # Create a temp directory if it doesn't exist
