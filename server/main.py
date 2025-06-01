@@ -2,7 +2,7 @@ import tensorflow as tf
 import numpy as np
 
 from tkinter import Tk, filedialog
-from PIL import Image
+import cv2 as cv
 
 import os
 
@@ -22,14 +22,14 @@ def get_image_from_user():
 
     if file_path:
         # Load the image
-        image = Image.open(file_path)
+        image = cv.imread(file_path)
 
         # Get filename and build new path
         filename = os.path.basename(file_path)
         temp_image_path = os.path.join(temp_dir, filename)
 
         # Save a copy of the image to the temp folder
-        image.save(temp_image_path)
+        cv.imwrite(temp_image_path,image)
 
         return temp_image_path
 
