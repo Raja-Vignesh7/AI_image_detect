@@ -1,0 +1,50 @@
+2025-06-27 05:07:18,880 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\app.py', reloading
+2025-06-27 05:07:18,881 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\app.py', reloading
+2025-06-27 05:07:18,882 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\app.py', reloading
+2025-06-27 05:07:19,411 - INFO - Performing cleanup on shutdown...
+2025-06-27 05:07:20,544 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-27 05:07:23,858 - INFO - Performing cleanup on shutdown...
+2025-06-27 05:07:48,241 - INFO - Starting AI Image Detection Server...
+2025-06-27 05:07:48,242 - INFO - Server configuration:
+2025-06-27 05:07:48,242 - INFO -   - Max file size: 16MB
+2025-06-27 05:07:48,242 - INFO -   - Allowed extensions: {'gif', 'jpeg', 'tiff', 'jpg', 'bmp', 'webp', 'png'}
+2025-06-27 05:07:48,242 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:07:48,243 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:07:48,243 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:07:48,244 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:08:06,450 - INFO - Performing cleanup on shutdown...
+2025-06-27 05:08:44,461 - INFO - Starting AI Image Detection Server...
+2025-06-27 05:08:44,463 - INFO - Server configuration:
+2025-06-27 05:08:44,463 - INFO -   - Max file size: 16MB
+2025-06-27 05:08:44,464 - INFO -   - Allowed extensions: {'bmp', 'jpg', 'png', 'webp', 'tiff', 'jpeg', 'gif'}
+2025-06-27 05:08:44,464 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:08:44,465 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:08:44,466 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:08:44,467 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:09:09,327 - INFO - Performing cleanup on shutdown...
+2025-06-27 05:09:28,972 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:09:28,974 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:09:28,977 - INFO - Starting AI Image Detection Server...
+2025-06-27 05:09:28,977 - INFO - Server configuration:
+2025-06-27 05:09:28,978 - INFO -   - Max file size: 16MB
+2025-06-27 05:09:28,978 - INFO -   - Allowed extensions: {'webp', 'png', 'jpg', 'tiff', 'jpeg', 'bmp', 'gif'}
+2025-06-27 05:09:28,979 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:09:28,979 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:09:29,038 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.173.18:5000
+2025-06-27 05:09:29,039 - INFO - [33mPress CTRL+C to quit[0m
+2025-06-27 05:09:29,072 - INFO -  * Restarting with watchdog (windowsapi)
+2025-06-27 05:09:37,594 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:09:37,595 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:09:37,599 - INFO - Starting AI Image Detection Server...
+2025-06-27 05:09:37,600 - INFO - Server configuration:
+2025-06-27 05:09:37,600 - INFO -   - Max file size: 16MB
+2025-06-27 05:09:37,601 - INFO -   - Allowed extensions: {'jpeg', 'webp', 'jpg', 'png', 'gif', 'bmp', 'tiff'}
+2025-06-27 05:09:37,601 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-06-27 05:09:37,602 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-06-27 05:09:37,619 - WARNING -  * Debugger is active!
+2025-06-27 05:09:37,630 - INFO -  * Debugger PIN: 981-686-749
+2025-06-27 05:09:37,703 - INFO - 127.0.0.1 - - [27/Jun/2025 05:09:37] "GET / HTTP/1.1" 200 -
+2025-06-27 05:09:37,813 - INFO - 127.0.0.1 - - [27/Jun/2025 05:09:37] "GET /static/js/script.js HTTP/1.1" 200 -
