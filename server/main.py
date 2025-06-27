@@ -60,11 +60,11 @@ class Model:
                 raise Exception("Image could not be loaded.")
 
             img = cv2.resize(img, (128, 128))
-            # img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert BGR to RGB
+            img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)  # Convert BGR to RGB
             img_array = np.expand_dims(img, axis=0) / 255.0
 
             prediction = Model.model.predict(img_array)
-            return float(prediction[0][1])
+            return float(prediction[0][0])
 
         except Exception as e:
             raise Exception(f"Prediction failed: {str(e)}")
