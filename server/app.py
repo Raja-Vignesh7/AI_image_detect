@@ -195,11 +195,11 @@ def predict():
         # Format result
         if prediction < 0.5:
             confidence = (1 - prediction) * 100
-            result = f"🧠 This image is likely **Human-Generated**. Confidence: {confidence:.2f}%"
+            result = f"This image is likely **Human-Generated**. Confidence: {confidence:.2f}%"
             classification = "human"
         else:
             confidence = prediction * 100
-            result = f"🤖 This image is likely **AI-Generated**. Confidence: {confidence:.2f}%"
+            result = f"This image is likely **AI-Generated**. Confidence: {confidence:.2f}%"
             classification = "ai"
         
         # Prepare response
