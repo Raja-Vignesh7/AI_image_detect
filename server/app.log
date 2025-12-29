@@ -92,3 +92,576 @@
 2025-12-14 15:29:22,048 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
 2025-12-14 15:29:22,057 - WARNING -  * Debugger is active!
 2025-12-14 15:29:22,061 - INFO -  * Debugger PIN: 499-913-517
+2025-12-29 19:41:24,206 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:41:24,206 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:41:24,208 - INFO - Starting AI Image Detection Server...
+2025-12-29 19:41:24,208 - INFO - Server configuration:
+2025-12-29 19:41:24,209 - INFO -   - Max file size: 16MB
+2025-12-29 19:41:24,209 - INFO -   - Allowed extensions: {'png', 'jpg', 'gif', 'webp', 'tiff', 'bmp', 'jpeg'}
+2025-12-29 19:41:24,210 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:41:24,211 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:41:24,255 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.90:5000
+2025-12-29 19:41:24,256 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 19:41:24,275 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 19:41:29,767 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:41:29,767 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:41:29,768 - INFO - Starting AI Image Detection Server...
+2025-12-29 19:41:29,769 - INFO - Server configuration:
+2025-12-29 19:41:29,769 - INFO -   - Max file size: 16MB
+2025-12-29 19:41:29,769 - INFO -   - Allowed extensions: {'tiff', 'bmp', 'png', 'webp', 'jpg', 'jpeg', 'gif'}
+2025-12-29 19:41:29,769 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:41:29,769 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:41:29,778 - WARNING -  * Debugger is active!
+2025-12-29 19:41:29,781 - INFO -  * Debugger PIN: 499-913-517
+2025-12-29 19:41:36,252 - INFO - 127.0.0.1 - - [29/Dec/2025 19:41:36] "GET / HTTP/1.1" 200 -
+2025-12-29 19:41:37,587 - INFO - 127.0.0.1 - - [29/Dec/2025 19:41:37] "GET /static/utils/webicon.webp HTTP/1.1" 200 -
+2025-12-29 19:41:54,336 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\1234_20251229_194154_4d7def2a.jpg
+2025-12-29 19:41:54,339 - INFO - Starting prediction for: 1234_20251229_194154_4d7def2a.jpg
+2025-12-29 19:41:54,339 - ERROR - Prediction error for file 1234.jpg: Model file not found: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\best_model (1).keras
+2025-12-29 19:41:54,342 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\1234_20251229_194154_4d7def2a.jpg
+2025-12-29 19:41:54,344 - INFO - 127.0.0.1 - - [29/Dec/2025 19:41:54] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 19:43:12,162 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:43:12,162 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:43:12,163 - INFO - Starting AI Image Detection Server...
+2025-12-29 19:43:12,163 - INFO - Server configuration:
+2025-12-29 19:43:12,164 - INFO -   - Max file size: 16MB
+2025-12-29 19:43:12,164 - INFO -   - Allowed extensions: {'webp', 'jpeg', 'gif', 'png', 'bmp', 'jpg', 'tiff'}
+2025-12-29 19:43:12,164 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:43:12,164 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:43:12,192 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.90:5000
+2025-12-29 19:43:12,192 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 19:43:12,210 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 19:43:17,493 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:43:17,493 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:43:17,494 - INFO - Starting AI Image Detection Server...
+2025-12-29 19:43:17,494 - INFO - Server configuration:
+2025-12-29 19:43:17,495 - INFO -   - Max file size: 16MB
+2025-12-29 19:43:17,495 - INFO -   - Allowed extensions: {'webp', 'png', 'tiff', 'bmp', 'gif', 'jpeg', 'jpg'}
+2025-12-29 19:43:17,495 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:43:17,495 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:43:17,504 - WARNING -  * Debugger is active!
+2025-12-29 19:43:17,510 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 19:43:21,221 - INFO - 127.0.0.1 - - [29/Dec/2025 19:43:21] "GET / HTTP/1.1" 200 -
+2025-12-29 19:43:32,879 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\1234_20251229_194332_950652da.jpg
+2025-12-29 19:43:32,881 - INFO - Starting prediction for: 1234_20251229_194332_950652da.jpg
+2025-12-29 19:43:35,262 - ERROR - Prediction error for file 1234.jpg: Prediction failed: Exception encountered when calling Sequential.call().
+
+[1mInput 0 of layer "dense" is incompatible with the layer: expected axis -1 of input shape to have value 3200, but received input with shape (1, 512)[0m
+
+Arguments received by Sequential.call():
+  • inputs=tf.Tensor(shape=(1, 128, 128, 3), dtype=float32)
+  • training=False
+  • mask=None
+2025-12-29 19:43:35,264 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\1234_20251229_194332_950652da.jpg
+2025-12-29 19:43:35,267 - INFO - 127.0.0.1 - - [29/Dec/2025 19:43:35] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 19:44:35,643 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 19:44:35,643 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 19:44:35,936 - INFO - Performing cleanup on shutdown...
+2025-12-29 19:44:36,791 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 19:44:49,453 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:44:49,454 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:44:49,455 - INFO - Starting AI Image Detection Server...
+2025-12-29 19:44:49,455 - INFO - Server configuration:
+2025-12-29 19:44:49,455 - INFO -   - Max file size: 16MB
+2025-12-29 19:44:49,456 - INFO -   - Allowed extensions: {'jpeg', 'png', 'jpg', 'webp', 'gif', 'tiff', 'bmp'}
+2025-12-29 19:44:49,456 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:44:49,456 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:44:49,468 - WARNING -  * Debugger is active!
+2025-12-29 19:44:49,471 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 19:44:49,500 - INFO - 127.0.0.1 - - [29/Dec/2025 19:44:49] "GET / HTTP/1.1" 200 -
+2025-12-29 19:44:49,916 - INFO - 127.0.0.1 - - [29/Dec/2025 19:44:49] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 19:45:00,616 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\1234_20251229_194500_9fa5f748.jpg
+2025-12-29 19:45:00,618 - INFO - Starting prediction for: 1234_20251229_194500_9fa5f748.jpg
+2025-12-29 19:45:03,126 - INFO - Prediction completed. Value: 0.12830671668052673
+2025-12-29 19:45:03,134 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\1234_20251229_194500_9fa5f748.jpg -> C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive\1234_20251229_194500_9fa5f748.jpg
+2025-12-29 19:45:03,138 - INFO - Analysis completed successfully: human (87.17%)
+2025-12-29 19:45:03,144 - INFO - 127.0.0.1 - - [29/Dec/2025 19:45:03] "POST /analyze HTTP/1.1" 200 -
+2025-12-29 19:45:44,520 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_194544_3840b755.jpg
+2025-12-29 19:45:44,523 - INFO - Starting prediction for: image5_20251229_194544_3840b755.jpg
+2025-12-29 19:45:44,905 - INFO - Prediction completed. Value: 0.23588697612285614
+2025-12-29 19:45:44,911 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_194544_3840b755.jpg -> C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive\image5_20251229_194544_3840b755.jpg
+2025-12-29 19:45:44,914 - INFO - Analysis completed successfully: human (76.41%)
+2025-12-29 19:45:44,920 - INFO - 127.0.0.1 - - [29/Dec/2025 19:45:44] "POST /analyze HTTP/1.1" 200 -
+2025-12-29 19:46:11,342 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image9_20251229_194611_51136c71.jpeg
+2025-12-29 19:46:11,345 - INFO - Starting prediction for: image9_20251229_194611_51136c71.jpeg
+2025-12-29 19:46:11,712 - INFO - Prediction completed. Value: 0.14482419192790985
+2025-12-29 19:46:11,716 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image9_20251229_194611_51136c71.jpeg -> C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive\image9_20251229_194611_51136c71.jpeg
+2025-12-29 19:46:11,719 - INFO - Analysis completed successfully: human (85.52%)
+2025-12-29 19:46:11,725 - INFO - 127.0.0.1 - - [29/Dec/2025 19:46:11] "POST /analyze HTTP/1.1" 200 -
+2025-12-29 19:46:37,086 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 19:46:37,127 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 19:46:37,128 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 19:46:37,436 - INFO - Performing cleanup on shutdown...
+2025-12-29 19:46:38,109 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 19:46:50,987 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:46:50,987 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:46:50,988 - INFO - Starting AI Image Detection Server...
+2025-12-29 19:46:50,988 - INFO - Server configuration:
+2025-12-29 19:46:50,989 - INFO -   - Max file size: 16MB
+2025-12-29 19:46:50,989 - INFO -   - Allowed extensions: {'bmp', 'png', 'jpg', 'tiff', 'jpeg', 'webp', 'gif'}
+2025-12-29 19:46:50,989 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 19:46:50,989 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 19:46:51,003 - WARNING -  * Debugger is active!
+2025-12-29 19:46:51,007 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 19:46:51,034 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image3_20251229_194651_e2c35adc.jpeg
+2025-12-29 19:46:51,034 - INFO - Starting prediction for: image3_20251229_194651_e2c35adc.jpeg
+2025-12-29 19:46:51,424 - INFO - Prediction completed. Value: 0.14482420682907104
+2025-12-29 19:46:51,425 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image3_20251229_194651_e2c35adc.jpeg -> C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive\image3_20251229_194651_e2c35adc.jpeg
+2025-12-29 19:46:51,426 - INFO - Analysis completed successfully: human (85.52%)
+2025-12-29 19:46:51,427 - INFO - 127.0.0.1 - - [29/Dec/2025 19:46:51] "POST /analyze HTTP/1.1" 200 -
+2025-12-29 19:48:16,914 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image3_20251229_194816_29852edc.jpeg
+2025-12-29 19:48:16,917 - INFO - Starting prediction for: image3_20251229_194816_29852edc.jpeg
+2025-12-29 19:48:17,226 - INFO - Prediction completed. Value: 0.14482420682907104
+2025-12-29 19:48:17,230 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image3_20251229_194816_29852edc.jpeg -> C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive\image3_20251229_194816_29852edc.jpeg
+2025-12-29 19:48:17,232 - INFO - Analysis completed successfully: human (85.52%)
+2025-12-29 19:48:17,235 - INFO - 127.0.0.1 - - [29/Dec/2025 19:48:17] "POST /analyze HTTP/1.1" 200 -
+2025-12-29 19:48:28,223 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image7_20251229_194828_395246ba.jpeg
+2025-12-29 19:48:28,228 - INFO - Starting prediction for: image7_20251229_194828_395246ba.jpeg
+2025-12-29 19:48:28,474 - INFO - Prediction completed. Value: 0.15492740273475647
+2025-12-29 19:48:28,479 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image7_20251229_194828_395246ba.jpeg -> C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive\image7_20251229_194828_395246ba.jpeg
+2025-12-29 19:48:28,480 - INFO - Analysis completed successfully: human (84.51%)
+2025-12-29 19:48:28,483 - INFO - 127.0.0.1 - - [29/Dec/2025 19:48:28] "POST /analyze HTTP/1.1" 200 -
+2025-12-29 19:48:40,294 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image1_20251229_194840_adc2a28e.png
+2025-12-29 19:48:40,297 - INFO - Starting prediction for: image1_20251229_194840_adc2a28e.png
+2025-12-29 19:48:40,649 - INFO - Prediction completed. Value: 0.17714107036590576
+2025-12-29 19:48:40,655 - INFO - File moved: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image1_20251229_194840_adc2a28e.png -> C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive\image1_20251229_194840_adc2a28e.png
+2025-12-29 19:48:40,657 - INFO - Analysis completed successfully: human (82.29%)
+2025-12-29 19:48:40,662 - INFO - 127.0.0.1 - - [29/Dec/2025 19:48:40] "POST /analyze HTTP/1.1" 200 -
+2025-12-29 23:23:39,003 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\posixpath.py', reloading
+2025-12-29 23:23:39,523 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:23:41,668 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:23:52,733 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:23:52,734 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:23:52,736 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:23:52,736 - INFO - Server configuration:
+2025-12-29 23:23:52,736 - INFO -   - Max file size: 16MB
+2025-12-29 23:23:52,737 - INFO -   - Allowed extensions: {'bmp', 'gif', 'webp', 'jpg', 'png', 'jpeg', 'tiff'}
+2025-12-29 23:23:52,737 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:23:52,737 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:23:52,759 - WARNING -  * Debugger is active!
+2025-12-29 23:23:52,766 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:24:05,309 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:24:05,311 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:24:05,312 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:24:05,968 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:24:06,584 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:24:18,952 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:24:18,952 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:24:18,953 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:24:18,953 - INFO - Server configuration:
+2025-12-29 23:24:18,954 - INFO -   - Max file size: 16MB
+2025-12-29 23:24:18,954 - INFO -   - Allowed extensions: {'jpeg', 'jpg', 'gif', 'webp', 'bmp', 'png', 'tiff'}
+2025-12-29 23:24:18,954 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:24:18,954 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:24:18,965 - WARNING -  * Debugger is active!
+2025-12-29 23:24:18,969 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:24:19,024 - INFO - 127.0.0.1 - - [29/Dec/2025 23:24:19] "GET / HTTP/1.1" 200 -
+2025-12-29 23:24:21,464 - INFO - 127.0.0.1 - - [29/Dec/2025 23:24:21] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:24:33,029 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_232433_840f6137.jpg
+2025-12-29 23:24:33,032 - INFO - Starting prediction for: image5_20251229_232433_840f6137.jpg
+2025-12-29 23:24:33,233 - ERROR - Prediction error for file image5.jpg: <class 'keras.src.models.sequential.Sequential'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras', 'class_name': 'Sequential', 'config': {'name': 'sequential', 'layers': [{'module': 'keras.layers', 'class_name': 'InputLayer', 'config': {'batch_input_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'feature_extraction_layer_input'}, 'registered_name': None}, {'module': 'tensorflow_hub.keras_layer', 'class_name': 'KerasLayer', 'config': {'name': 'feature_extraction_layer', 'trainable': False, 'dtype': 'float32', 'batch_input_shape': [None, 224, 224, 3], 'handle': 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1'}, 'registered_name': 'KerasLayer', 'build_config': {'input_shape': [None, 224, 224, 3]}}, {'module': 'keras.layers', 'class_name': 'Dense', 'config': {'name': 'output_layer', 'trainable': True, 'dtype': 'float32', 'units': 1, 'activation': 'sigmoid', 'use_bias': True, 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'GlorotUniform', 'config': {'seed': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}, 'registered_name': None, 'build_config': {'input_shape': [None, 1280]}}]}, 'registered_name': None, 'build_config': {'input_shape': [None, 224, 224, 3]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'Adam', 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'jit_compile': True, 'is_legacy_optimizer': False, 'learning_rate': 0.0010000000474974513, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': 'binary_crossentropy', 'metrics': ['accuracy'], 'loss_weights': None, 'weighted_metrics': None, 'run_eagerly': None, 'steps_per_execution': None, 'jit_compile': None}}.
+
+Exception encountered: Could not deserialize class 'KerasLayer' because its parent module tensorflow_hub.keras_layer cannot be imported. Full object config: {'module': 'tensorflow_hub.keras_layer', 'class_name': 'KerasLayer', 'config': {'name': 'feature_extraction_layer', 'trainable': False, 'dtype': 'float32', 'batch_input_shape': [None, 224, 224, 3], 'handle': 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1'}, 'registered_name': 'KerasLayer', 'build_config': {'input_shape': [None, 224, 224, 3]}}
+2025-12-29 23:24:33,240 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_232433_840f6137.jpg
+2025-12-29 23:24:33,243 - INFO - 127.0.0.1 - - [29/Dec/2025 23:24:33] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:26:19,272 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:26:19,918 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:31:52,835 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:31:52,837 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:31:52,839 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:31:52,839 - INFO - Server configuration:
+2025-12-29 23:31:52,839 - INFO -   - Max file size: 16MB
+2025-12-29 23:31:52,840 - INFO -   - Allowed extensions: {'bmp', 'jpeg', 'jpg', 'webp', 'gif', 'png', 'tiff'}
+2025-12-29 23:31:52,840 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:31:52,840 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:31:52,926 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.90:5000
+2025-12-29 23:31:52,927 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 23:31:52,941 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:32:05,466 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:32:05,468 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:32:05,469 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:32:05,469 - INFO - Server configuration:
+2025-12-29 23:32:05,469 - INFO -   - Max file size: 16MB
+2025-12-29 23:32:05,469 - INFO -   - Allowed extensions: {'bmp', 'jpg', 'webp', 'png', 'gif', 'tiff', 'jpeg'}
+2025-12-29 23:32:05,469 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:32:05,469 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:32:05,479 - WARNING -  * Debugger is active!
+2025-12-29 23:32:05,485 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:32:05,519 - INFO - 127.0.0.1 - - [29/Dec/2025 23:32:05] "GET / HTTP/1.1" 200 -
+2025-12-29 23:32:08,010 - INFO - 127.0.0.1 - - [29/Dec/2025 23:32:08] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:32:26,735 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_233226_0e0517ac.jpg
+2025-12-29 23:32:26,737 - INFO - Starting prediction for: image5_20251229_233226_0e0517ac.jpg
+2025-12-29 23:32:26,781 - ERROR - Prediction error for file image5.jpg: <class 'keras.src.models.sequential.Sequential'> could not be deserialized properly. Please ensure that components that are Python object instances (layers, models, etc.) returned by `get_config()` are explicitly deserialized in the model's `from_config()` method.
+
+config={'module': 'keras', 'class_name': 'Sequential', 'config': {'name': 'sequential', 'layers': [{'module': 'keras.layers', 'class_name': 'InputLayer', 'config': {'batch_input_shape': [None, 224, 224, 3], 'dtype': 'float32', 'sparse': False, 'ragged': False, 'name': 'feature_extraction_layer_input'}, 'registered_name': None}, {'module': 'tensorflow_hub.keras_layer', 'class_name': 'KerasLayer', 'config': {'name': 'feature_extraction_layer', 'trainable': False, 'dtype': 'float32', 'batch_input_shape': [None, 224, 224, 3], 'handle': 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1'}, 'registered_name': 'KerasLayer', 'build_config': {'input_shape': [None, 224, 224, 3]}}, {'module': 'keras.layers', 'class_name': 'Dense', 'config': {'name': 'output_layer', 'trainable': True, 'dtype': 'float32', 'units': 1, 'activation': 'sigmoid', 'use_bias': True, 'kernel_initializer': {'module': 'keras.initializers', 'class_name': 'GlorotUniform', 'config': {'seed': None}, 'registered_name': None}, 'bias_initializer': {'module': 'keras.initializers', 'class_name': 'Zeros', 'config': {}, 'registered_name': None}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None}, 'registered_name': None, 'build_config': {'input_shape': [None, 1280]}}]}, 'registered_name': None, 'build_config': {'input_shape': [None, 224, 224, 3]}, 'compile_config': {'optimizer': {'module': 'keras.optimizers', 'class_name': 'Adam', 'config': {'name': 'Adam', 'weight_decay': None, 'clipnorm': None, 'global_clipnorm': None, 'clipvalue': None, 'use_ema': False, 'ema_momentum': 0.99, 'ema_overwrite_frequency': None, 'jit_compile': True, 'is_legacy_optimizer': False, 'learning_rate': 0.0010000000474974513, 'beta_1': 0.9, 'beta_2': 0.999, 'epsilon': 1e-07, 'amsgrad': False}, 'registered_name': None}, 'loss': 'binary_crossentropy', 'metrics': ['accuracy'], 'loss_weights': None, 'weighted_metrics': None, 'run_eagerly': None, 'steps_per_execution': None, 'jit_compile': None}}.
+
+Exception encountered: Could not locate class 'KerasLayer'. Make sure custom classes and functions are decorated with `@keras.saving.register_keras_serializable()`. If they are already decorated, make sure they are all imported so that the decorator is run before trying to load them. Full object config: {'module': 'tensorflow_hub.keras_layer', 'class_name': 'KerasLayer', 'config': {'name': 'feature_extraction_layer', 'trainable': False, 'dtype': 'float32', 'batch_input_shape': [None, 224, 224, 3], 'handle': 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1'}, 'registered_name': 'KerasLayer', 'build_config': {'input_shape': [None, 224, 224, 3]}}
+2025-12-29 23:32:26,786 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_233226_0e0517ac.jpg
+2025-12-29 23:32:26,794 - INFO - 127.0.0.1 - - [29/Dec/2025 23:32:26] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:33:59,913 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:33:59,914 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:33:59,914 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:34:00,168 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:34:01,023 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:34:09,769 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:34:09,769 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:34:09,770 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:34:09,771 - INFO - Server configuration:
+2025-12-29 23:34:09,771 - INFO -   - Max file size: 16MB
+2025-12-29 23:34:09,771 - INFO -   - Allowed extensions: {'tiff', 'webp', 'jpg', 'gif', 'bmp', 'jpeg', 'png'}
+2025-12-29 23:34:09,771 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:34:09,771 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:34:09,783 - WARNING -  * Debugger is active!
+2025-12-29 23:34:09,786 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:34:20,373 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:34:20,375 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:34:20,939 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:34:21,614 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:34:35,066 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:34:35,067 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:34:35,068 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:34:35,068 - INFO - Server configuration:
+2025-12-29 23:34:35,068 - INFO -   - Max file size: 16MB
+2025-12-29 23:34:35,068 - INFO -   - Allowed extensions: {'gif', 'png', 'tiff', 'bmp', 'webp', 'jpg', 'jpeg'}
+2025-12-29 23:34:35,069 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:34:35,069 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:34:35,078 - WARNING -  * Debugger is active!
+2025-12-29 23:34:35,089 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:34:35,126 - INFO - 127.0.0.1 - - [29/Dec/2025 23:34:35] "GET / HTTP/1.1" 200 -
+2025-12-29 23:34:36,907 - INFO - 127.0.0.1 - - [29/Dec/2025 23:34:36] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:34:43,548 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_233443_036fe820.jpg
+2025-12-29 23:34:43,551 - INFO - Starting prediction for: image5_20251229_233443_036fe820.jpg
+2025-12-29 23:34:43,612 - INFO - Using C:\Users\bvrvg\AppData\Local\Temp\tfhub_modules to cache modules.
+2025-12-29 23:34:43,812 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\werkzeug\\debug\\__init__.py', reloading
+2025-12-29 23:34:43,817 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\werkzeug\\serving.py', reloading
+2025-12-29 23:34:43,822 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\http\\server.py', reloading
+2025-12-29 23:34:43,828 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\socketserver.py', reloading
+2025-12-29 23:34:43,836 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\threading.py', reloading
+2025-12-29 23:34:43,851 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\resolver.py:120: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+2025-12-29 23:34:43,865 - INFO - Downloading TF-Hub Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1'.
+2025-12-29 23:34:44,319 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:34:44,323 - INFO - Cleaned up temp file: image5_20251229_233443_036fe820.jpg
+2025-12-29 23:34:45,632 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:34:56,509 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:34:56,511 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:34:56,512 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:34:56,512 - INFO - Server configuration:
+2025-12-29 23:34:56,512 - INFO -   - Max file size: 16MB
+2025-12-29 23:34:56,513 - INFO -   - Allowed extensions: {'webp', 'gif', 'tiff', 'jpeg', 'jpg', 'png', 'bmp'}
+2025-12-29 23:34:56,514 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:34:56,514 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:34:56,557 - WARNING -  * Debugger is active!
+2025-12-29 23:34:56,565 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:34:56,707 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_233456_94ce0ab5.jpg
+2025-12-29 23:34:56,709 - INFO - Starting prediction for: image5_20251229_233456_94ce0ab5.jpg
+2025-12-29 23:34:56,757 - INFO - Using C:\Users\bvrvg\AppData\Local\Temp\tfhub_modules to cache modules.
+2025-12-29 23:34:56,914 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\resolver.py:120: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+2025-12-29 23:34:56,940 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:35:47,001 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:36:10,356 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\cv2\\__init__.py', reloading
+2025-12-29 23:36:10,739 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:36:10,742 - INFO - Cleaned up temp file: image5_20251229_233456_94ce0ab5.jpg
+2025-12-29 23:36:11,416 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:36:22,945 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:36:22,946 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:36:22,947 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:36:22,947 - INFO - Server configuration:
+2025-12-29 23:36:22,947 - INFO -   - Max file size: 16MB
+2025-12-29 23:36:22,947 - INFO -   - Allowed extensions: {'png', 'jpeg', 'bmp', 'jpg', 'tiff', 'gif', 'webp'}
+2025-12-29 23:36:22,947 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:36:22,947 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:36:22,959 - WARNING -  * Debugger is active!
+2025-12-29 23:36:22,963 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:36:23,002 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_233622_ea9c37d0.jpg
+2025-12-29 23:36:23,003 - INFO - Starting prediction for: image5_20251229_233622_ea9c37d0.jpg
+2025-12-29 23:36:23,014 - INFO - Using C:\Users\bvrvg\AppData\Local\Temp\tfhub_modules to cache modules.
+2025-12-29 23:36:23,074 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\resolver.py:120: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+2025-12-29 23:36:23,080 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:37:13,162 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:38:03,255 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:38:53,335 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:39:43,410 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:40:33,510 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:41:23,615 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:42:12,574 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\tkinter\\filedialog.py', reloading
+2025-12-29 23:42:12,923 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:42:12,924 - INFO - Cleaned up temp file: image5_20251229_233622_ea9c37d0.jpg
+2025-12-29 23:42:13,598 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:42:16,796 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:42:32,296 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:42:32,296 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:42:32,298 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:42:32,298 - INFO - Server configuration:
+2025-12-29 23:42:32,299 - INFO -   - Max file size: 16MB
+2025-12-29 23:42:32,299 - INFO -   - Allowed extensions: {'webp', 'jpeg', 'jpg', 'gif', 'bmp', 'tiff', 'png'}
+2025-12-29 23:42:32,299 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:42:32,299 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:42:32,350 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.90:5000
+2025-12-29 23:42:32,350 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 23:42:32,363 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:42:45,428 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:42:45,429 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:42:45,430 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:42:45,430 - INFO - Server configuration:
+2025-12-29 23:42:45,430 - INFO -   - Max file size: 16MB
+2025-12-29 23:42:45,431 - INFO -   - Allowed extensions: {'webp', 'gif', 'png', 'bmp', 'jpeg', 'jpg', 'tiff'}
+2025-12-29 23:42:45,431 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:42:45,431 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:42:45,453 - WARNING -  * Debugger is active!
+2025-12-29 23:42:45,461 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:42:45,520 - INFO - 127.0.0.1 - - [29/Dec/2025 23:42:45] "GET / HTTP/1.1" 200 -
+2025-12-29 23:42:56,272 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_234256_b7fcf992.jpg
+2025-12-29 23:42:56,275 - INFO - Starting prediction for: image5_20251229_234256_b7fcf992.jpg
+2025-12-29 23:42:56,313 - INFO - Using C:\Users\bvrvg\AppData\Local\Temp\tfhub_modules to cache modules.
+2025-12-29 23:42:56,535 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\resolver.py:120: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+2025-12-29 23:42:56,549 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:43:46,668 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:44:36,739 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:45:26,837 - INFO - Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1' already being downloaded by 'RAJAVIGNESH.27272.e68d713d319a49d7b14ec1a949f53ce4'. Waiting.
+2025-12-29 23:45:31,855 - INFO - Downloading TF-Hub Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1'.
+2025-12-29 23:45:37,369 - INFO - Downloaded https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1, Total size: 9.91MB
+2025-12-29 23:45:37,378 - INFO - Downloaded TF-Hub Module 'https://kaggle.com/models/google/mobilenet-v2/TensorFlow2/100-224-feature-vector/1'.
+2025-12-29 23:45:37,411 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\module_v2.py:126: The name tf.saved_model.load_v2 is deprecated. Please use tf.compat.v2.saved_model.load instead.
+
+2025-12-29 23:45:38,424 - INFO - Fingerprint not found. Saved model loading will continue.
+2025-12-29 23:45:38,425 - INFO - path_and_singleprint metric could not be logged. Saved model loading will continue.
+2025-12-29 23:45:38,452 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tf_keras\src\utils\tf_utils.py:229: The name tf.Dimension is deprecated. Please use tf.compat.v1.Dimension instead.
+
+2025-12-29 23:45:38,453 - ERROR - Prediction error for file image5.jpg: Only instances of `keras.Layer` can be added to a Sequential model. Received: <tensorflow_hub.keras_layer.KerasLayer object at 0x0000020ECD669E10> (of type <class 'tensorflow_hub.keras_layer.KerasLayer'>)
+2025-12-29 23:45:38,454 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_234256_b7fcf992.jpg
+2025-12-29 23:45:38,455 - INFO - 127.0.0.1 - - [29/Dec/2025 23:45:38] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:45:57,069 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:45:57,766 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:46:29,488 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:46:29,489 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:46:29,490 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:46:29,490 - INFO - Server configuration:
+2025-12-29 23:46:29,490 - INFO -   - Max file size: 16MB
+2025-12-29 23:46:29,490 - INFO -   - Allowed extensions: {'bmp', 'jpeg', 'png', 'jpg', 'gif', 'tiff', 'webp'}
+2025-12-29 23:46:29,490 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:46:29,490 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:46:29,531 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.90:5000
+2025-12-29 23:46:29,531 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 23:46:29,549 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:46:41,463 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:46:41,464 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:46:41,466 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:46:41,466 - INFO - Server configuration:
+2025-12-29 23:46:41,466 - INFO -   - Max file size: 16MB
+2025-12-29 23:46:41,466 - INFO -   - Allowed extensions: {'webp', 'png', 'bmp', 'gif', 'jpg', 'tiff', 'jpeg'}
+2025-12-29 23:46:41,467 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:46:41,467 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:46:41,486 - WARNING -  * Debugger is active!
+2025-12-29 23:46:41,495 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:46:41,550 - INFO - 127.0.0.1 - - [29/Dec/2025 23:46:41] "GET / HTTP/1.1" 200 -
+2025-12-29 23:46:50,120 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_234650_349cf870.jpg
+2025-12-29 23:46:50,124 - INFO - Starting prediction for: image5_20251229_234650_349cf870.jpg
+2025-12-29 23:46:50,155 - INFO - Using C:\Users\bvrvg\AppData\Local\Temp\tfhub_modules to cache modules.
+2025-12-29 23:46:50,330 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\resolver.py:120: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+2025-12-29 23:46:50,350 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\module_v2.py:126: The name tf.saved_model.load_v2 is deprecated. Please use tf.compat.v2.saved_model.load instead.
+
+2025-12-29 23:46:52,356 - INFO - Fingerprint not found. Saved model loading will continue.
+2025-12-29 23:46:52,357 - INFO - path_and_singleprint metric could not be logged. Saved model loading will continue.
+2025-12-29 23:46:52,384 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tf_keras\src\utils\tf_utils.py:229: The name tf.Dimension is deprecated. Please use tf.compat.v1.Dimension instead.
+
+2025-12-29 23:46:52,385 - ERROR - Prediction error for file image5.jpg: Only instances of `keras.Layer` can be added to a Sequential model. Received: <tensorflow_hub.keras_layer.KerasLayer object at 0x000002407FD0D930> (of type <class 'tensorflow_hub.keras_layer.KerasLayer'>)
+2025-12-29 23:46:52,386 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_234650_349cf870.jpg
+2025-12-29 23:46:52,387 - INFO - 127.0.0.1 - - [29/Dec/2025 23:46:52] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:48:51,632 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\h5py\\__init__.py', reloading
+2025-12-29 23:48:51,666 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\h5py\\_hl\\files.py', reloading
+2025-12-29 23:48:51,714 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\h5py\\_hl\\group.py', reloading
+2025-12-29 23:48:51,750 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\h5py\\_hl\\base.py', reloading
+2025-12-29 23:48:52,642 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:48:53,455 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:49:01,945 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:49:01,946 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:49:01,947 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:49:01,947 - INFO - Server configuration:
+2025-12-29 23:49:01,947 - INFO -   - Max file size: 16MB
+2025-12-29 23:49:01,947 - INFO -   - Allowed extensions: {'png', 'webp', 'jpg', 'jpeg', 'tiff', 'bmp', 'gif'}
+2025-12-29 23:49:01,947 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:49:01,947 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:49:01,961 - WARNING -  * Debugger is active!
+2025-12-29 23:49:01,967 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:49:43,764 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:49:43,766 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:49:43,768 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:49:44,576 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:49:45,288 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:49:55,792 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:49:55,793 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:49:55,794 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:49:55,794 - INFO - Server configuration:
+2025-12-29 23:49:55,794 - INFO -   - Max file size: 16MB
+2025-12-29 23:49:55,795 - INFO -   - Allowed extensions: {'gif', 'webp', 'jpeg', 'jpg', 'png', 'bmp', 'tiff'}
+2025-12-29 23:49:55,795 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:49:55,795 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:49:55,829 - WARNING -  * Debugger is active!
+2025-12-29 23:49:55,843 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:49:55,958 - INFO - 127.0.0.1 - - [29/Dec/2025 23:49:55] "GET / HTTP/1.1" 200 -
+2025-12-29 23:49:56,222 - INFO - 127.0.0.1 - - [29/Dec/2025 23:49:56] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:50:03,249 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_235003_0c6e1be7.jpg
+2025-12-29 23:50:03,251 - INFO - Starting prediction for: image5_20251229_235003_0c6e1be7.jpg
+2025-12-29 23:50:03,337 - ERROR - Prediction error for file image5.jpg: Prediction failed: 'NoneType' object has no attribute 'predict'
+2025-12-29 23:50:03,340 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_235003_0c6e1be7.jpg
+2025-12-29 23:50:03,342 - INFO - 127.0.0.1 - - [29/Dec/2025 23:50:03] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:50:45,587 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:50:45,589 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:50:45,699 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:50:46,395 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:51:08,157 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:51:08,159 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:51:08,164 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:51:08,165 - INFO - Server configuration:
+2025-12-29 23:51:08,166 - INFO -   - Max file size: 16MB
+2025-12-29 23:51:08,167 - INFO -   - Allowed extensions: {'jpg', 'jpeg', 'tiff', 'png', 'bmp', 'webp', 'gif'}
+2025-12-29 23:51:08,168 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:51:08,169 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:51:08,234 - WARNING -  * Debugger is active!
+2025-12-29 23:51:08,248 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:51:08,353 - INFO - 127.0.0.1 - - [29/Dec/2025 23:51:08] "GET / HTTP/1.1" 200 -
+2025-12-29 23:51:08,862 - INFO - 127.0.0.1 - - [29/Dec/2025 23:51:08] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:51:19,813 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_235119_3cafa44b.jpg
+2025-12-29 23:51:19,815 - INFO - Starting prediction for: image5_20251229_235119_3cafa44b.jpg
+2025-12-29 23:51:19,919 - ERROR - Prediction error for file image5.jpg: Prediction failed: 'NoneType' object has no attribute 'predict'
+2025-12-29 23:51:19,924 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image5_20251229_235119_3cafa44b.jpg
+2025-12-29 23:51:19,928 - INFO - 127.0.0.1 - - [29/Dec/2025 23:51:19] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:52:14,689 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:52:15,530 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:52:31,392 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:52:31,393 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:52:31,393 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:52:31,394 - INFO - Server configuration:
+2025-12-29 23:52:31,394 - INFO -   - Max file size: 16MB
+2025-12-29 23:52:31,394 - INFO -   - Allowed extensions: {'png', 'tiff', 'jpg', 'bmp', 'webp', 'jpeg', 'gif'}
+2025-12-29 23:52:31,394 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:52:31,394 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:52:31,420 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.29.90:5000
+2025-12-29 23:52:31,420 - INFO - [33mPress CTRL+C to quit[0m
+2025-12-29 23:52:31,429 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:52:52,430 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:52:52,431 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:52:52,431 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:52:52,433 - INFO - Server configuration:
+2025-12-29 23:52:52,433 - INFO -   - Max file size: 16MB
+2025-12-29 23:52:52,434 - INFO -   - Allowed extensions: {'gif', 'png', 'bmp', 'jpeg', 'jpg', 'webp', 'tiff'}
+2025-12-29 23:52:52,434 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:52:52,434 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:52:52,452 - WARNING -  * Debugger is active!
+2025-12-29 23:52:52,456 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:52:52,493 - INFO - 127.0.0.1 - - [29/Dec/2025 23:52:52] "GET / HTTP/1.1" 200 -
+2025-12-29 23:52:52,999 - INFO - 127.0.0.1 - - [29/Dec/2025 23:52:52] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:53:03,756 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\tmpgkj9qmf3_20251229_235303_7f9b7789.jpg
+2025-12-29 23:53:03,759 - INFO - Starting prediction for: tmpgkj9qmf3_20251229_235303_7f9b7789.jpg
+2025-12-29 23:53:03,818 - ERROR - Prediction error for file tmpgkj9qmf3.jpg: Prediction failed: 'NoneType' object has no attribute 'predict'
+2025-12-29 23:53:03,820 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\tmpgkj9qmf3_20251229_235303_7f9b7789.jpg
+2025-12-29 23:53:03,822 - INFO - 127.0.0.1 - - [29/Dec/2025 23:53:03] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:54:09,974 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\huggingface_hub\\__init__.py', reloading
+2025-12-29 23:54:10,012 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\huggingface_hub\\_snapshot_download.py', reloading
+2025-12-29 23:54:10,045 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\huggingface_hub\\utils\\__init__.py', reloading
+2025-12-29 23:54:10,061 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\huggingface_hub\\utils\\_validators.py', reloading
+2025-12-29 23:54:10,078 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\huggingface_hub\\utils\\_typing.py', reloading
+2025-12-29 23:54:10,106 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\huggingface_hub\\utils\\logging.py', reloading
+2025-12-29 23:54:10,134 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\huggingface_hub\\constants.py', reloading
+2025-12-29 23:54:10,261 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\absl\\__init__.py', reloading
+2025-12-29 23:54:10,734 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:54:11,518 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:54:20,026 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:54:20,026 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:54:20,027 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:54:20,027 - INFO - Server configuration:
+2025-12-29 23:54:20,028 - INFO -   - Max file size: 16MB
+2025-12-29 23:54:20,028 - INFO -   - Allowed extensions: {'gif', 'jpeg', 'jpg', 'bmp', 'tiff', 'webp', 'png'}
+2025-12-29 23:54:20,028 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:54:20,028 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:54:20,040 - WARNING -  * Debugger is active!
+2025-12-29 23:54:20,043 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:54:25,714 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\anaconda3\\envs\\myenv\\Lib\\site-packages\\numpy\\__init__.py', reloading
+2025-12-29 23:54:26,153 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:54:26,821 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:54:35,394 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:54:35,396 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:54:35,397 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:54:35,397 - INFO - Server configuration:
+2025-12-29 23:54:35,397 - INFO -   - Max file size: 16MB
+2025-12-29 23:54:35,397 - INFO -   - Allowed extensions: {'jpg', 'tiff', 'webp', 'bmp', 'gif', 'jpeg', 'png'}
+2025-12-29 23:54:35,397 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:54:35,397 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:54:35,407 - WARNING -  * Debugger is active!
+2025-12-29 23:54:35,411 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:55:12,772 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:55:12,779 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:55:12,961 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:55:13,647 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:55:27,273 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:55:27,275 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:55:27,281 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:55:27,282 - INFO - Server configuration:
+2025-12-29 23:55:27,283 - INFO -   - Max file size: 16MB
+2025-12-29 23:55:27,284 - INFO -   - Allowed extensions: {'tiff', 'gif', 'webp', 'bmp', 'jpeg', 'png', 'jpg'}
+2025-12-29 23:55:27,285 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:55:27,286 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:55:27,381 - WARNING -  * Debugger is active!
+2025-12-29 23:55:27,401 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:55:27,500 - INFO - 127.0.0.1 - - [29/Dec/2025 23:55:27] "GET / HTTP/1.1" 200 -
+2025-12-29 23:55:27,894 - INFO - 127.0.0.1 - - [29/Dec/2025 23:55:27] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:55:36,085 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\tmpgkj9qmf3_20251229_235536_1c54895a.jpg
+2025-12-29 23:55:36,089 - INFO - Starting prediction for: tmpgkj9qmf3_20251229_235536_1c54895a.jpg
+2025-12-29 23:55:36,090 - ERROR - Prediction error for file tmpgkj9qmf3.jpg: type object 'Model' has no attribute 'predict'
+2025-12-29 23:55:36,093 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\tmpgkj9qmf3_20251229_235536_1c54895a.jpg
+2025-12-29 23:55:36,096 - INFO - 127.0.0.1 - - [29/Dec/2025 23:55:36] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
+2025-12-29 23:56:27,912 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:56:27,914 - INFO -  * Detected change in 'C:\\Users\\bvrvg\\Desktop\\Files\\Projects\\AI_image_detect\\server\\main.py', reloading
+2025-12-29 23:56:28,453 - INFO - Performing cleanup on shutdown...
+2025-12-29 23:56:29,140 - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-29 23:56:41,230 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:56:41,230 - INFO - Directory ensured: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:56:41,231 - INFO - Starting AI Image Detection Server...
+2025-12-29 23:56:41,232 - INFO - Server configuration:
+2025-12-29 23:56:41,232 - INFO -   - Max file size: 16MB
+2025-12-29 23:56:41,232 - INFO -   - Allowed extensions: {'webp', 'tiff', 'jpg', 'bmp', 'gif', 'png', 'jpeg'}
+2025-12-29 23:56:41,232 - INFO -   - Temp folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp
+2025-12-29 23:56:41,232 - INFO -   - Archive folder: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\archive
+2025-12-29 23:56:41,242 - WARNING -  * Debugger is active!
+2025-12-29 23:56:41,246 - INFO -  * Debugger PIN: 981-686-749
+2025-12-29 23:56:41,275 - INFO - 127.0.0.1 - - [29/Dec/2025 23:56:41] "GET / HTTP/1.1" 200 -
+2025-12-29 23:56:41,692 - INFO - 127.0.0.1 - - [29/Dec/2025 23:56:41] "[36mGET /static/utils/webicon.webp HTTP/1.1[0m" 304 -
+2025-12-29 23:56:50,743 - INFO - File saved to temp: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image6_20251229_235650_e128f6c6.jpg
+2025-12-29 23:56:50,747 - INFO - Starting prediction for: image6_20251229_235650_e128f6c6.jpg
+2025-12-29 23:56:51,361 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tf_keras\src\backend.py:1400: The name tf.executing_eagerly_outside_functions is deprecated. Please use tf.compat.v1.executing_eagerly_outside_functions instead.
+
+2025-12-29 23:56:51,388 - INFO - Using C:\Users\bvrvg\AppData\Local\Temp\tfhub_modules to cache modules.
+2025-12-29 23:56:51,510 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\resolver.py:120: The name tf.gfile.MakeDirs is deprecated. Please use tf.io.gfile.makedirs instead.
+
+2025-12-29 23:56:51,563 - WARNING - From C:\Users\bvrvg\anaconda3\envs\myenv\lib\site-packages\tensorflow_hub\module_v2.py:126: The name tf.saved_model.load_v2 is deprecated. Please use tf.compat.v2.saved_model.load instead.
+
+2025-12-29 23:56:53,678 - INFO - Fingerprint not found. Saved model loading will continue.
+2025-12-29 23:56:53,679 - INFO - path_and_singleprint metric could not be logged. Saved model loading will continue.
+2025-12-29 23:56:54,248 - ERROR - Prediction error for file image6.jpg: Prediction failed: 'NoneType' object has no attribute 'predict'
+2025-12-29 23:56:54,249 - INFO - Cleaned up temp file after error: C:\Users\bvrvg\Desktop\Files\Projects\AI_image_detect\server\temp\image6_20251229_235650_e128f6c6.jpg
+2025-12-29 23:56:54,251 - INFO - 127.0.0.1 - - [29/Dec/2025 23:56:54] "[35m[1mPOST /analyze HTTP/1.1[0m" 500 -
